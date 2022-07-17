@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: devlopesbernardo/python-test-app:1.0
+        image: devlopesbernardo/python-test-app:2.0
         ports:
         - containerPort: 5000
