@@ -10,6 +10,6 @@ spec:
     name: python-app
   triggers:
   - type: cpu
-    metricType: Utilization
     metadata:
-      value: "10"
+      type: Utilization 
+      value: "30"
