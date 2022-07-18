@@ -1,0 +1,15 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: python-app
+  namespace: app
+spec:
+  scaleTargetRef:
+    kind: Deployment
+    apiVersion: apps/v1
+    name: python-app
+  triggers:
+  - type: cpu
+    metricType: Utilization
+    metadata:
+      value: "60"
