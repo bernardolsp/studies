@@ -19,3 +19,8 @@ spec:
         image: devlopesbernardo/python-test-app:2.0
         ports:
         - containerPort: 5000
+        resources:
+          limits:
+            cpu: "100m"
+          requests:
+            cpu: "50m"
